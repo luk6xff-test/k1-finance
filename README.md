@@ -10,7 +10,7 @@ Statyczna strona www przygotowana pod GitHub Pages, bez formularzy, z bezpośred
 - placeholdery do Facebooka i Instagrama
 - podstrona `privacy.html`
 - workflow GitHub Actions do automatycznego wdrażania po każdym pushu do `main`
-- plik `CNAME` dla domeny `k1-finance.com.pl`
+- plik `CNAME` dla domeny `k1-finance.pl`
 
 ## Jak uruchomić
 
@@ -33,7 +33,7 @@ zdeployuje aktualną wersję strony na GitHub Pages.
 
 W katalogu głównym jest plik `CNAME`:
 
-`k1-finance.com.pl`
+`k1-finance.pl`
 
 Dzięki temu GitHub Pages będzie publikować stronę pod tą domeną po poprawnym ustawieniu DNS u operatora.
 
@@ -63,5 +63,12 @@ Uzupełnij:
 
 ## DNS dla GitHub Pages
 
-Przy domenie apex (`k1-finance.com.pl`) ustaw rekordy `A` na adresy GitHub Pages oraz opcjonalnie rekord `CNAME` dla `www` na `twoj-login.github.io`.
+Przy domenie apex (`k1-finance.pl`) ustaw rekordy `A` na adresy GitHub Pages oraz opcjonalnie rekord `CNAME` dla `www` na `luk6xff-test.github.io`:
+```
+k1-finance.pl — A — 185.199.108.153
+k1-finance.pl — A — 185.199.109.153
+k1-finance.pl — A — 185.199.110.153
+k1-finance.pl — A — 185.199.111.153
+www.k1-finance.pl — CNAME — luk6xff-test.github.io
+```
 
